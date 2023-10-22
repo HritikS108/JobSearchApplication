@@ -23,7 +23,7 @@ export const setFormData = (data) => ({
 // Use thunk to make asynchronous API requests
 export const fetchJobs = (filterCriteria) => {
   
-  const baseUrl = "https://jobsearch-bwbz.onrender.com//api/jobs";
+  const baseUrl = "https://jobsearch-bwbz.onrender.com/api/jobs";
   const apiKey = '55d77c512c3b0e2f0e86ac1dee30804ff3fbcf58';
 
   const config = {
@@ -50,7 +50,7 @@ export const fetchJobs = (filterCriteria) => {
 
 export const fetchJobDetails = (jobId) => {
 
-  const baseUrl = "https://jobsearch-bwbz.onrender.com//api/job/";
+  const baseUrl = "https://jobsearch-bwbz.onrender.com/api/job/";
   const apiKey = '55d77c512c3b0e2f0e86ac1dee30804ff3fbcf58';
 
   const config = {
@@ -75,7 +75,7 @@ export const fetchJobDetails = (jobId) => {
 
 export const fetchRelatedJobs = (filterCriteria) => {
   
-  const baseUrl = "https://jobsearch-bwbz.onrender.com//api/jobs";
+  const baseUrl = "https://jobsearch-bwbz.onrender.com/api/jobs";
   const apiKey = '55d77c512c3b0e2f0e86ac1dee30804ff3fbcf58';
 
   const config = {
