@@ -1,21 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import '../css/filter-criteria.css'; // Import your custom CSS here
 import { connect } from 'react-redux';
 import { fetchJobs } from '../store/actions/jobActions';
 
 export function FilterCriteria(props) {
-  const languages = ['','Java', 'javascript', 'Python', 'C++', 'Go', 'Kotlin', 'Php', 'react'];
-  const locations = ['','India', 'USA', 'Germany', 'UK'];
 
   const [language, setLanguage] = useState('');
   const [location, setLocation] = useState('');
-  const [remote, setRemote] = useState(0);
 
   function onSubmit() {
     const filter = {
       language,
       location,
-      remote,
     };
 
     props.fetchJobs(filter);

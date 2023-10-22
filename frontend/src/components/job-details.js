@@ -1,20 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { connect } from 'react-redux';
 import { fetchJobDetails,fetchRelatedJobs } from '../store/actions/jobActions';
-import { useNavigate, useParams } from 'react-router-dom';
+import {useParams } from 'react-router-dom';
 import ApplicationForm from './application-form';
 import '../css/job-details.css'; 
-import SuccessPage from "./success-page";
-import {JobList} from "./jobList"
 
 function JobDetails(props) {
-  const { selectedJob ,relatedJobs } = props;
-  const navigate = useNavigate();
+  const { selectedJob } = props;
+  // const navigate = useNavigate();
   const { id } = useParams();
   const logoUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW3d--uV61nFQ0KTgiIwQ2Dd3fwhfPD-ahBBJz6FOwe1ir_CqbnhdDHG16hQ8VKEG5usQ&usqp=CAU";
 
   const [showForm, setShowForm] = useState(false);
-  // const [showSuccess, setShowSuccess] = useState(false);
   
   useEffect(() => {
     props.fetchJobDetails(id);
@@ -92,7 +89,7 @@ function JobDetails(props) {
 
 const mapStateToProps = (state) => ({
   selectedJob: state.job.selectedJob,
-  relatedJobs : state.job.relatedJobs
+  // relatedJobs : state.job.relatedJobs
 });
 
 const mapDispatchToProps = {

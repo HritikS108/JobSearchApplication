@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchJobs, selectJob } from '../store/actions/jobActions';
-import JobDetails from "./job-details";
+import { fetchJobs } from '../store/actions/jobActions';
 import { JobList } from "./jobList";
 import FilterCriteria from './filter-criteria';
 
