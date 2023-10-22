@@ -92,7 +92,7 @@
 
   @media (max-width: 768px) {
     .job-list-container {
-      width: 90%; 
+      width: 88%; 
       margin: 20px; 
       padding:10px;
     }
@@ -102,6 +102,13 @@
       margin: 10px 0; 
     }
   
+    .job-items{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-left:3px;
+    }
+
     .job-item {
       flex-direction: column; 
       gap: 10px; 
@@ -118,7 +125,7 @@
     }
   
     .view-apply a {
-      width: 100%; 
+      width: 90%; 
     }
   }
   

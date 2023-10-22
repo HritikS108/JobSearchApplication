@@ -43,9 +43,9 @@ background-color: #fff;
   @media (max-width: 768px) {
     .filter-criteria {
       flex-direction: column; 
-      margin: 20px;
+      margin: 15px;
       padding:10px;
-      width: 90%;
+      width: 88%;
     }
   
     .criteria {
