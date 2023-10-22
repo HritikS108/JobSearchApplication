@@ -5,10 +5,11 @@
     align-items: center;
     border-bottom: 1px solid #f2f2f2;
     flex-direction: row;
-    margin: 15px;
+    margin: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width:88%;
+    width:90%;
+    margin-left:4%;    
     background-color: #DBDBDB;
     align-items: center;
     position:relative;
@@ -32,4 +33,12 @@
   }
   .navbar a:hover {
     background-color: #f1356d;
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      margin: 15px;
+      width: 88%;
+    }
+  
   }

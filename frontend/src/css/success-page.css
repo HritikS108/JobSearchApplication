@@ -59,13 +59,17 @@
   
   @media (max-width: 768px) {
    
+    .success-page{
+      width:88%;
+    }
     .page-details{
       display: flex;
       flex-direction: column;
     }
   
-    .user-data{
-        width:100%;
+    .user-data , .user-resume{
+        width:96%;
+        border-radius: 10px;
     }
 
     .user-resume{
