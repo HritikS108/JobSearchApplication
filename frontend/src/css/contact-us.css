@@ -1,0 +1,29 @@
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* background: url("../assets/uploads/bgImg.jpg") no-repeat; */
+    background-size: cover; 
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+    overflow: auto;
+    scroll-behavior: smooth;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left:4%;
+}
+
+.inner{
+    background-color:rgb(37,41,88);
+    color:white;
+    margin:10px;
+    padding:20px;
+    width:50%;
+    margin-left:22%;
+}
